@@ -1,0 +1,100 @@
+@media (max-width: 1279px) {
+    .main-banner {
+        &__h1 {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .main-banner {
+        &__h1 {
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: auto;
+        }
+
+        &__button {
+            font-size: 14px;
+        }
+    }
+
+    .banner-gallery {
+        height: 220px;
+
+        &__content {
+            padding: 15px;
+        }
+
+        &__wrap {
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 125%;
+            letter-spacing: 0.2px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-banner {
+        background: #FFFFFF;
+
+        &__content {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        &__wrapper {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+            gap: 30px;
+        }
+
+        &__h1 {
+            font-size: 22px;
+            line-height: 115%;
+        }
+
+        &__button {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__gallery {
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
+        }
+    }
+
+    .banner-gallery {
+        height: 390px;
+
+        &__content {
+            padding: 20px;
+        }
+
+        &__price {
+            font-size: 12px;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 115%;
+            letter-spacing: auto;
+        }
+
+        &__navigation {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 429px) {
+    .main-banner {
+        
+    }
+}

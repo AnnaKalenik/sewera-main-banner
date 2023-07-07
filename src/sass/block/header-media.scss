@@ -1,0 +1,162 @@
+@media (max-width: 1279px) {
+    .header-new {
+        &__wrap {
+            min-height: 100px;
+        }
+
+        &__logo {
+            width: 140px;
+            height: 30px;
+        }
+    
+        &__list-links {
+            gap: 17px;
+        }
+        
+        &__num {
+            font-size: 16px;
+            letter-spacing: 0.58px;
+        }
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .nav {
+        &__list {
+            gap: 17px;
+        }
+    
+        &__item {
+            font-size: 14px;
+        }
+    
+        &__button {
+            min-width: 103px;
+            gap: 10px;
+            padding: 11px 10px;
+        }
+        
+        &__link {
+            gap: 5px;
+        }
+    }
+
+    .catalog {
+        bottom: 32px;
+
+        &__wrap {  
+            border-radius: 6px;   
+            padding: 20px;
+            margin-top: 20px;
+        }
+    
+        &__list {
+            gap: 2px 20px;
+        }
+        
+        &__link {
+            gap: 4px;
+            font-size: 14px;
+    
+            &::after {
+                width: 11px;
+                height: 11px;
+            }
+        }
+    }
+
+    .wish {
+        gap: 5px;
+    
+        &__link {
+            font-size: 14px;    
+        }
+    }
+
+    .sub-menu {
+        left: 1px;
+    
+        &__wrap {
+            gap: 20px;
+            padding: 20px;
+        }
+            
+        &__link {
+            font-size: 14px;
+        }
+    
+        &__blog {
+            margin-left: 20px;
+    
+            &::before {
+                left: -20px;
+            }
+        }
+    }
+    
+    .blog {   
+        &__title {
+            font-size: 14px;
+        }
+    
+        &__description {
+            font-size: 12px;
+        }
+        
+        &__link {
+            width: 30px;
+            height: 30px;
+
+            &_footer {
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .header-wrapper {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
+    
+    .header-new {       
+        &__wrap {
+            min-height: 60px;
+        }
+
+        &__logo {
+            width: 113px;
+            height: 24px;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__list-links {
+            gap: 15px;
+        }
+
+        &__item {
+            &_hidden {
+                display: none;
+            }
+        }
+
+        &__num {
+            display: none;
+        }
+
+        &__icon {
+            &_phone {
+                display: flex;
+            }
+        }
+    }
+}

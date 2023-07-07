@@ -1,0 +1,142 @@
+.mob-menu {
+    display: none;
+}
+
+.messengers {
+    &__link {
+        flex: 1 1 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__name {
+        font-family: 'Fira Sans';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 125%;
+        text-align: left;
+        color: #102938;
+    }
+}
+
+.call-back {
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    &__wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 10px;
+
+        &_sent {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-family: 'Fira Sans';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 125%;
+        text-align: left;
+        color: #102938;
+    }
+
+    &__input-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__input {
+        border-radius: 4px !important;
+        background: #FFF !important;
+        border: none !important;
+        padding: 10.5px 5px !important;
+
+        &::placeholder {
+            color: #6F7F87;
+            font-size: 14px;
+            font-family: 'Fira Sans';
+            line-height: 115%;
+            letter-spacing: 0.39px;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-decoration: none !important;
+        text-align: center;
+        vertical-align: top;
+        padding: 11px;
+        border: none;
+        background: #009cd9;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        display: none;
+        font-family: 'Fira Sans';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        text-align: left;
+        color: #102938;
+
+        &_sent {
+            display: flex;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    &__text {
+        font-family: 'Fira Sans';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        text-align: left;
+        color: #102938;
+
+        &_mob {
+            display: none;
+        }
+
+        &:hover {
+            color: #102938 !important;
+        }
+    }
+}
+
+.mob-menu-cover {
+    display: none;
+}
+
+@import "mob-menu-media.scss";

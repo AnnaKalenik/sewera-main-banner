@@ -1,0 +1,222 @@
+.main-banner {
+    background: #F8F8F8;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    &__h1 {
+        color: #102938;
+        font-family: 'Fira Sans';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.26px;
+    }
+
+    &__button {
+        display: flex;
+        gap: 8px;
+        height: 48px;
+        padding: 11px 14px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        border: 1px solid #102938;
+        background: #f5f5f500;
+
+        color: #102938;
+        text-align: center;
+        font-family: 'Fira Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+
+        cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background: #102938;
+            color: #F5F5F5;
+        }
+
+        &:hover .main-banner__button-icon path {
+            stroke: #F5F5F5;
+        }
+    }
+
+    &__button-icon {
+        width: 14px;
+        height: 14px;
+
+        & path {
+            stroke: #102938;
+            transition: stroke 0.3s ease, color 0.3s ease;
+        }
+    }
+}
+
+.banner-gallery {
+    position: relative;
+    width: 100%;
+    height: 280px;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    &::after {
+        position: absolute;
+        content: '';
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.70) 100%);
+    }
+    
+    &__content {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        padding: 20px;
+    }
+
+    &__price {
+        display: inline-block;
+        background-color: #FFFFFF;
+        border-radius: 32px;
+        padding: 3px 10px;
+
+        color: #102938;
+        font-family: 'Fira Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    &__elems {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        gap: 40px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: 'Fira Sans';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__btn.swiper-button {
+        width: 24px !important;
+        height: 24px!important;
+        border: none !important;
+        cursor: pointer;
+    }
+
+    &__btn.swiper-button::before {
+        display: none !important;
+    }
+
+    &__btn.swiper-button-disabled > svg {
+        opacity: 0.6;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    &__line {
+        flex: 1 0 0;
+        align-self: stretch;
+
+        height: 3px;
+        background: #ffffff50;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    &__line-progress {
+
+        &_full {
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slide {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+
+@import "main-banner-media";

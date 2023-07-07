@@ -1,0 +1,216 @@
+.footer {
+    background: #F8F8F8;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding-bottom: 120px;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: minmax(221px, 293.5px) minmax(462px, 617px) minmax(221px, 293.5px);
+        grid-template-rows: 1fr;
+        gap: 30px;
+
+        border-bottom: 1px solid #E8EAEC;
+        padding: 60px 0 40px;
+    }
+
+    &__column-wrap {
+        display: grid;
+        grid-template-columns: minmax(221px, 293.5px) minmax(221px, 293.5px);
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+
+    &__logo {
+        width: 186px;
+        height: 39px;
+    }
+
+    &__phone,
+    &__address,
+    &__time {
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+
+        font-family: 'Fira Sans';
+        font-weight: 600;
+        line-height: 150%;
+        text-align: left;
+        color: #102938;
+    }
+
+    &__phone,
+    &__address {
+        cursor: pointer;
+
+        &:hover {
+            color: #102938 !important;
+        }
+    }
+
+    &__phone {
+        font-size: 16px;
+        letter-spacing: 0.36px;
+
+        border-top: 1px solid #E8EAEC;
+
+        &_pc {
+            border-top: none !important;
+            padding-top: 0 !important;
+        }
+
+        &_mob {
+            display: none !important;
+        }
+    }
+
+    &__address,
+    &__time {
+        font-size: 14px;
+    }
+
+    &__address-text {
+        font-style: normal;
+    }
+
+    &__nav {
+        padding-top: 40px;
+    }
+
+    &__nav-list {
+        display: grid;
+        grid-template-columns: minmax(221px, 293.5px) minmax(462px, 617px) minmax(221px, 293.5px);
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+
+    &__nav-item {
+        &_column1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &_column2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+
+            display: grid;
+            grid-template-columns: minmax(221px, 293.5px) minmax(221px, 293.5px);
+            grid-template-rows: 1fr;
+            gap: 30px;
+        }
+
+        &_column3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 30px;
+        }
+    }
+
+    &__nav-name {   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+        
+        color: #102938;
+        font-size: 16px;
+        font-family: 'Fira Sans';
+        font-weight: 600;
+        line-height: 150%;
+
+        &:hover {
+            color: #102938 !important;
+        }
+
+        &_mob {
+            display: none;
+        }
+    }
+
+    &__window-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 7px;
+
+        margin-top: 7px;
+    }
+
+    &__window-link {
+        color: #102938;
+        font-size: 14px;
+        font-family: 'Fira Sans';
+        line-height: 150%;
+
+        &:hover {
+            color: #102938 !important;
+        }
+    }
+
+    &__wrap-blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__blog {
+        position: static;
+        max-width: 150px;
+        width: 100%;
+    }
+
+    &__copy {
+        max-width: 186px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+
+        padding-top: 30px;
+    }
+
+    &__text {
+        font-family: 'Fira Sans';
+        font-size: 12px;
+        line-height: 125%;
+        text-align: left;
+        color: #102938;
+
+        &:hover {
+            color: #102938 !important;
+        }
+    }
+
+    &__call-back {
+        width: 100%;
+        height: 74px;
+    }
+
+    &__messengers {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+}
+
+@import "footer-media";
