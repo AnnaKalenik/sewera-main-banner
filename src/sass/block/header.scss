@@ -235,7 +235,7 @@ body.mob-menu-open {
 .catalog {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     left: 0;
     bottom: 50px;
 
@@ -342,7 +342,7 @@ body.mob-menu-open {
 .sub-menu {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     left: -13px;
     bottom: 0px;
 
