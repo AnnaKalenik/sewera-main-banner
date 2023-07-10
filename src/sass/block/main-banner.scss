@@ -1,11 +1,11 @@
 .main-banner {
-    background: #F8F8F8;
+    background: #F5F5F5;
 
     &__content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 540px;
         grid-template-rows: 1fr;
-        gap: 20px;
+        gap: 30px;
         width: 100%;
     }
 
@@ -20,11 +20,10 @@
     &__h1 {
         color: #102938;
         font-family: 'Fira Sans';
-        font-size: 28px;
+        font-size: 34px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.26px;
+        line-height: 120%;
     }
 
     &__button {
@@ -73,7 +72,7 @@
 .banner-gallery {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 360px;
 
     border-radius: 8px;
     overflow: hidden;
@@ -105,7 +104,7 @@
         justify-content: space-between;
         align-items: flex-start;
         align-self: stretch;
-        padding: 20px;
+        padding: 30px;
 
         pointer-events: none;
     }
@@ -128,7 +127,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 20px;
         align-self: stretch;
     }
 
@@ -137,16 +136,16 @@
         justify-content: space-between;
         align-items: center;
         align-self: stretch;
-        gap: 40px;
+        gap: 10px;
     }
 
     &__title {
         color: #FFF;
         font-family: 'Fira Sans';
-        font-size: 22px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 120%;
+        line-height: normal;
     }
 
     &__navigation {

@@ -2,8 +2,35 @@
     .main-banner {
         &__h1 {
             font-size: 26px;
+            line-height: normal;
+            letter-spacing: 0.26px;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 20px;
         }
     }
+
+    .banner-gallery {
+        height: 280px;
+
+        &__content {
+            padding: 20px;
+        }
+
+        &__elems {
+            gap: 10px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 120%;
+        }
+    }
+
 }
 
 @media (max-width: 1023px) {
