@@ -434,23 +434,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="banner-gallery__pagination">
-										<div class="banner-gallery__line">
-											<div class="banner-gallery__line-progress banner-gallery__line-progress_full"></div>
-										</div>
-										<div class="banner-gallery__line">
-											<div class="banner-gallery__line-progress"></div>
-										</div>
-										<div class="banner-gallery__line">
-											<div class="banner-gallery__line-progress"></div>
-										</div>
-										<div class="banner-gallery__line">
-											<div class="banner-gallery__line-progress"></div>
-										</div>
-										<div class="banner-gallery__line">
-											<div class="banner-gallery__line-progress"></div>
-										</div>
-									</div>
+									<div class="banner-gallery__pagination"></div>
 								</div>
 							</div>
 							<div class="banner-gallery__slider swiper">
@@ -483,14 +467,10 @@
 										nextEl: ".banner-gallery__btn_next",
 										prevEl: ".banner-gallery__btn_prev",
 								  	},
-									// pagination: {
-									// 	el: ".banner-gallery__pagination",
-									// 	clickable: true,
-									// 	type: 'custom',
-									// 	renderCustom: function (swiper, current, total) {
-  									// 	  return current + ' of ' + total;
-  									// 	}
-									// },
+									pagination: {
+										el: ".banner-gallery__pagination",
+										clickable: true,
+									},
 								});
 							</script>
 						</div>
