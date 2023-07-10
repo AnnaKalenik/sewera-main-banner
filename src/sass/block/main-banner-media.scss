@@ -17,20 +17,20 @@
     .banner-gallery {
         height: 280px;
 
-        &__content {
-            padding: 20px;
-        }
-
-        &__elems {
-            gap: 10px;
-        }
-
         &__title {
             font-size: 22px;
             line-height: 120%;
         }
-    }
 
+        &__content {
+            padding: 20px 20px 33px;
+        }
+
+        &__elems {
+            gap: 10px;
+            padding: 0 20px 20px 20px;
+        }
+    }
 }
 
 @media (max-width: 1023px) {
@@ -49,18 +49,22 @@
     .banner-gallery {
         height: 220px;
 
-        &__content {
-            padding: 15px;
-        }
-
-        &__wrap {
-            gap: 20px;
-        }
-
         &__title {
             font-size: 20px;
             line-height: 125%;
             letter-spacing: 0.2px;
+        }
+
+        &__content {
+            padding: 15px 15px 28px;
+        }
+
+        &__elems {
+            padding: 0 15px 15px 15px;
+        }
+
+        &__wrap {
+            gap: 20px;
         }
     }
 }
@@ -99,10 +103,6 @@
     .banner-gallery {
         height: 390px;
 
-        &__content {
-            padding: 20px;
-        }
-
         &__price {
             font-size: 12px;
         }
@@ -111,6 +111,16 @@
             font-size: 18px;
             line-height: 115%;
             letter-spacing: auto;
+
+            width: 100%;
+        }
+
+        &__content {
+            padding: 20px 20px 33px;
+        }
+
+        &__elems {
+            padding: 0 20px 20px 20px;
         }
 
         &__navigation {
